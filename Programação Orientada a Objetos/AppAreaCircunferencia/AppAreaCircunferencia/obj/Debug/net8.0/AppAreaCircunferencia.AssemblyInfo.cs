@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppAreaCircunferencia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11a17fd3e5b15410afde28cba867f879e269520d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff3e8ea1e547dd4406b1dddc68ef6d0910455e43")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppAreaCircunferencia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppAreaCircunferencia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

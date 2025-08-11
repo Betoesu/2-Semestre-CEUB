@@ -1,0 +1,24 @@
+# Pasta de cache e configurações do Visual Studio
+.vs/
+
+# Pastas de compilação (Build)
+[Bb]in/
+[Oo]bj/
+
+# Arquivos gerados pelo Rider
+.idea/
+
+# Arquivos de usuário específicos
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos do Resharper
+_ReSharper*/
+*.[Rr]esharper
+*.DotSettings.user
+
+# Pacotes NuGet
+packages/
+*.nupkg
