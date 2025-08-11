@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppSaudacao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff3e8ea1e547dd4406b1dddc68ef6d0910455e43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c5f99a0dc7e5b371a1f01fd11fd1cb00e9ce16e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppSaudacao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppSaudacao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
