@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 13 HTML</title>
+</head>
+
+<body>
+    <h1>Exemplo 13 HTML - Formulários</h1>
+    <h2>Formulário de Cadastro</h2>
+
+    <form action="paginaDestino.java" method="post">
+        <div>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <br>
+                <br>
+
+                <label for="">Digite o seu Nome</label>
+                <br>
+                <input type="text" name="txtNome" id="txtNome">
+                <br>
+
+                <label for="">CPF</label>
+                <br>
+                <input type="text" name="txtCPF" id="txtCPF" required>
+                <br>
+
+                <label for="">RG</label>
+                <br>
+                <input type="text" name="txtRG" id="txtRG" required>
+                <br>
+
+                <label for="">Data de Nascimento</label>
+                <br>
+                <input type="date" name="txtDataNascimento" id="txtDataNascimento" min="1910" , max="2100" step="1">
+                <br>
+
+                <label for="">Sexo</label>
+                <br>
+                <input type="radio" name="radioSexo" id="radioSexo" value="1"> Feminino
+                <input type="radio" name="radioSexo" id="radioSexo" value="2"> Masculino
+                <br>
+
+                <label for="">Estado Civil</label>
+                <br>
+                <select name="cboEstadoCivil" id="cboEstadoCivil">
+                    <option value="1">Casado</option>
+                    <option value="2">Solteiro</option>
+                    <option value="3">Viúvo</option>
+                    <option value="4">Divorciado</option>
+                    <option value="5">Tico-tico mo fubá</option>
+                    <option value="6">Outros</option>
+                </select>
+
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Preferências</legend>
+                <fieldset>
+                    <legend>Escolha um ou mais locais de lazer</legend>
+                    <input type="checkbox" name="ckTipoLazer" id="ckTipoLazer" value="1">Cidade
+                    <br>
+                    <input type="checkbox" name="ckTipoLazer" id="ckTipoLazer" value="2">Cachoeira
+                    <br>
+                    <input type="checkbox" name="ckTipoLazer" id="ckTipoLazer" value="3">Praia
+                    <br>
+                    <input type="checkbox" name="ckTipoLazer" id="ckTipoLazer" value="4">Montanha
+                    <br>
+                    <input type="checkbox" name="ckTipoLazer" id="ckTipoLazer" value="5">Montanha 
+                    <br>
+                    <input type="checkbox" name="ckTipoLazer" id="ckTipoLazer" value="6">Fazenda
+                    <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolha um Região Favorita</legend>
+                    <input type="radio" name="radioRegiao" id="radioRegiao" value="1">Norte
+                    <br>
+                    <input type="radio" name="radioRegiao" id="radioRegiao" value="2">Nordeste
+                    <br>
+                    <input type="radio" name="radioRegiao" id="radioRegiao" value="3">Centro-Oeste
+                    <br>
+                    <input type="radio" name="radioRegiao" id="radioRegiao" value="4">Sudeste
+                    <br>
+                    <input type="radio" name="radioRegiao" id="radioRegiao" value="5">Sul
+                    <br>
+ 
+                </fieldset>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <label for="">Dados Cadastrados</label>
+            <table width="80%">
+                <tr>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Ano de Nascimento</th>
+
+                </tr>
+
+                <tr>
+                    <td>555.999.777-66</td>
+                    <td>Joselino Ferreia</td>
+                    <td>1995</td>
+                </tr>
+
+                <tr>
+                    <td>555.999.777-66</td>
+                    <td>Jose Ferreia</td>
+                    <td>1995</td>
+                </tr>
+
+                <tr>
+                    <td>555.999.777-66</td>
+                    <td>Andrelino Ferreia</td>
+                    <td>1995</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</body>
+
+</html>
