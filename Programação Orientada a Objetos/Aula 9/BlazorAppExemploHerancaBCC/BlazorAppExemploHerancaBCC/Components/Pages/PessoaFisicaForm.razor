@@ -1,0 +1,54 @@
+﻿@using BlazorAppExemploHerancaBCC.Model
+@page "/cadastroPessoaFisica"
+@rendermode InteractiveServer
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Cadastro de Pessoa Física
+        </div>
+
+        <div class="card-body">
+            <EditForm Model="@pessoaFisica">
+                <div>
+                    <label for="" class="form-label">Nome</label>
+                    <InputText id="txtNome" class="form-control" @bind-Value="pessoaFisica.Nome" />
+                </div>
+                <div>
+                    <label for="" class="form-label">Endereço</label>
+                    <InputText id="txtEndereco" class="form-control" @bind-Value="pessoaFisica.Endereco" />
+                </div>
+                <div>
+                    <label for="" class="form-label">Telefone</label>
+                    <InputText id="txtTelefone" class="form-control" @bind-Value="pessoaFisica.Telefone" />
+                </div>
+                <div>
+                    <label for="" class="form-label">RG</label>
+                    <InputText id="txtRG" class="form-control" @bind-Value="pessoaFisica.Rg" />
+                </div>
+                <div>
+                    <label for="" class="form-label">Data de Nascimento</label>
+                    <InputDate id="txtDataNascimento" class="form-control" @bind-Value="pessoaFisica.DataNascimento" />
+                </div>
+                
+              
+            </EditForm>
+        </div>
+
+        <div class="card-footer">
+        </div>
+    </div>
+</div>
+
+
+ 
+@code {
+    PessoaFisica pessoaFisica = new PessoaFisica();
+    string dadosImpressos;
+    private void Imprimir()
+    {
+        dadosImpressos = $"Nome: {pessoaFisica.Nome}";
+    }
+}
+}
+

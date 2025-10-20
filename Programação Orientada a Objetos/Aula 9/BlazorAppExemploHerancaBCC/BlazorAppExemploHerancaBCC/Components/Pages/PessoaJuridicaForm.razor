@@ -1,0 +1,55 @@
+﻿@using BlazorAppExemploHerancaBCC.Model
+@page "/cadastroPessoaJuridica"
+@rendermode InteractiveServer
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Cadastro de Pessoa Jurídica
+        </div>
+
+        <div class="card-body">
+            <EditForm Model="@pessoaJuridica">
+                <div>
+                    <label for="" class="form-label">Nome</label>
+                    <InputText id="txtNome" class="form-control" @bind-Value="pessoaJuridica.Nome"/>
+                </div>
+
+                <div>
+                    <label for="" class="form-label">Endereço</label>
+                    <InputText id="txtEndereco" class="form-control" @bind-Value="pessoaJuridica.Endereco"/>
+                </div>
+
+                <div>
+                    <label for="" class="form-label">Telefone</label>
+                    <InputText id="txtTelefone" class="form-control" @bind-Value="pessoaJuridica.Telefone"/>
+                </div>
+
+                <div>
+                    <label for="" class="form-label">CNPJ</label>
+                    <InputText id="txtCNPJ" class="form-control" @bind-Value="pessoaJuridica.Cnpj"/>
+                </div>
+
+                <div>
+                    <label for="" class="form-label">Incricao Estadual</label>
+                    <InputText id="txtInscricaoEstadual" class="form-control" @bind-Value="pessoaJuridica.InscrEstadual"/>
+                </div>
+
+                <div>
+                     <label for="" class="form-label">Incricao Estadual</label>
+                     <InputText id="txtInscricaoMunicipal" class="form-control" @bind-Value="pessoaJuridica.InscrMunicipal"/>
+                </div>
+
+               
+            </EditForm>
+
+
+</div>
+
+
+
+
+
+@code {
+    PessoaJuridica pessoaJuridica = new PessoaJuridica();
+}
