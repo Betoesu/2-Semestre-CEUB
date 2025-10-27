@@ -1,0 +1,29 @@
+﻿@using BlazorAppFuncionario.Model
+<h3>ExemploPolimorfismo</h3>
+
+@code {
+    private string Nome { get; set; } = string.Empty;
+    private int HorasTrabalhadas{ get; set; }
+    private string CargoSelecionado{ get; set; }
+
+    private double SalarioCalculado{ get; set; }
+    private double BonificacaoCalculada { get; set; }
+
+    Funcionario funcionario = new Funcionario();
+    private void CriarFuncionario()
+    {
+        switch (CargoSelecionado)
+        {
+            case"Estagiário":
+                funcionario = new Estagiario();
+                break;
+            case "Diretor":
+                funcionario = new Diretor();
+                break;
+            case "Gerente":
+                funcionario = new Gerente();
+                break;
+      
+        }
+    }
+}

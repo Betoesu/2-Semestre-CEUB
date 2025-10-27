@@ -27,15 +27,23 @@
                     <InputText id="txtRG" class="form-control" @bind-Value="pessoaFisica.Rg" />
                 </div>
                 <div>
+                    <label for="" class="form-label">CPF</label>
+                    <InputText id="txtCPF" class="form-control" @bind-Value="pessoaFisica.Cpf" />
+                </div>
+                <div>
                     <label for="" class="form-label">Data de Nascimento</label>
                     <InputDate id="txtDataNascimento" class="form-control" @bind-Value="pessoaFisica.DataNascimento" />
                 </div>
-                
-              
             </EditForm>
         </div>
 
         <div class="card-footer">
+            <div>
+                <button class="btn btn-primary" @onclick="Imprimir">Cadastrar</button>
+            </div>
+            <div>
+                <pre>@dadosImpressos</pre>
+            </div>
         </div>
     </div>
 </div>
@@ -47,7 +55,7 @@
     string dadosImpressos;
     private void Imprimir()
     {
-        dadosImpressos = $"Nome: {pessoaFisica.Nome}";
+        dadosImpressos = $"Nome: {pessoaFisica.Nome}\r\n Endereço: {pessoaFisica.Endereco}\r\n Telefone: {pessoaFisica.Telefone}\r\n CPF: {pessoaFisica.Cpf}\r\n Data de Nascimento: {pessoaFisica.DataNascimento}";
     }
 }
 }
