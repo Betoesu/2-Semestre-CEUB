@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 4 - JavaScript</title>
+</head>
+
+<body>
+    <div class="container-md pt-4">
+        <h1>Exemplo 3 - JavaScript</h1>
+        <h2>Cálculo do IMC</h2>
+
+        <div class="form-group">
+            <label for="text">Informe o peso</label>
+            <input type="text" class="form-control" name="txtPeso" id="txtPeso">
+        </div>
+        <div class="form-group">
+            <label for="text">Informe a altura</label>
+            <input type="" class="form-control" name="txtAltura" id="txtAltura">
+        </div>
+        <div class="form-group pt-4">
+            <button type="button" class="btn btn-primary form-control" onclick="calcularIMC()">Calcular IMC</button>
+        </div>
+        <div class="alert alert-info mt-5" role="alert">
+            <p id="resultado">
+
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        function calcularIMC() {
+            var peso = document.getElementById("txtPeso").value;
+            var altura = document.getElementById("txtAltura").value;
+            var imc = (peso/(altura*altura))
+            document.getElementById("resultado").innerHTML = "O IMC é: " + imc;
+            if(imc < 18.5){
+                document.getElementById("resultado").innerHTML = "O IMC é: " + imc + " Você está Abaixo do Peso";
+            }
+
+            else if(imc >= 18.5 && imc <= 25){
+                document.getElementById("resultado").innerHTML = "O IMC é: " + imc + " Você está Normal";
+            }
+
+            else if(imc > 25 && imc < 30){
+                document.getElementById("resultado").innerHTML = "O IMC é: " + imc + " Você está Acima do Peso";
+            }
+
+            else if (imc >= 30){
+                document.getElementById("resultado").innerHTML = "O IMC é: " + imc + " Você está Obeso";
+            }
+
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
