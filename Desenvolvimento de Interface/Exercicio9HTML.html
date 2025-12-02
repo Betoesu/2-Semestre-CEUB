@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9 HTML</title>
+</head>
+
+<body>
+    <h1>Exemplo 9 - Uso das Tags de Imagem e Vídeo</h1>
+        <p>
+            Este exemplo mostra diferentes formas de usar as tags <code>&lt;img&gt;</code> e <code>&lt;video&gt;</code>, incluindo o uso
+            de <code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code> para agrupar mídias com legendas.
+        </p>
+
+    <h2>Descrição</h2>
+        <p>
+            As tags abordadas são:
+        </p>
+            <ul>
+                <li><strong>&lt;img&gt;</strong>: Usada para inserir imagens na página.</li>
+                <li><strong>&lt;video&gt;</strong>: Usada para inserir vídeos na página.</li>
+                <li><strong>&lt;figure&gt;</strong>: Usada para agrupar mídias (imagens, vídeos, gráficos) com uma legenda.</li>
+                <li><strong>&lt;figcaption&gt;</strong>: Usada para adicionar uma legenda ao conteúdo dentro de <code>&lt;figure&gt;</code>.</li>
+            </ul>
+
+    <h2>Exemplos práticos</h2>
+
+    <h3>Imagem usando os atributos img, figure e figcaption</h3>
+        <p>Uma imagem agrupada com legenda descritiva</p>
+            <figure>
+                <img src="Charizard.jpg" alt="Imagem de um Charizard" controls width="400">
+                <figcaption>Figura1: Charizard</figcaption>
+            </figure>
+
+    <h3>Video com Legenda usando &lt;figure&gt; e &lt;figcaption&gt;</h3>
+        <p>Exemplo do uso da tag video com legenda agrupada.</p>
+            <figure>
+                <video controls width="400">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </figure>
+    <h3>Incorporação de Vídeos do Youtube usando a tag &lt;iframe&gt;</h3>
+        <p>Neste exemplo vamos usar dois vídeos do Youtube lado a lado usando a tag &lt;iframe&gt;</p>
+            <div>
+                <figure>
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/K4DyBUG242c" title="Cartoon, Jéja - On &amp; On (feat. Daniel Levi) | Electronic Pop | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+
+                <figcaption>Veja os atores antes e depois</figcaption>
+
+                <figure>
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/NJNp6DnAAIo?list=RDNJNp6DnAAIo" title="Cartoon, Jéja - C U Again ft. Mikk Mäe (Cartoon, Jéja, Futuristik VIP) | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+
+                <figcaption>Montage Renekton</figcaption>
+                
+            </div>
+</body>
+
+</html>
